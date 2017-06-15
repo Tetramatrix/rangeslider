@@ -1,0 +1,41 @@
+<div class="wikidoc">
+<p>Wpf RangeSlider for Winforms<br>
+<br>
+1. What it does it do?<br>
+RangeSlider is a WPF .dll for Winforms. Thank you to <a href="http://www.thejoyofcode.com/CreatingaRangeSliderinWPFandothercooltipsandtricksforUserControls.aspx" target="_blank">
+joyofcode</a>!<br>
+<br>
+1.2. Features<br>
+Trackbar with 2 thumbs where you can select a range not just a value.<br>
+<br>
+<img src="https://www.codeplex.com/Download?ProjectName=rangeslider&DownloadId=1626154" alt="" width="273" height="282"><br>
+2. Requirements<br>
+- Winforms<br>
+<br>
+3. Installation<br>
+Download source code and compile.<br>
+<br>
+4. Tutorial<br>
+Add a reference to the .dll to your project. In designer add an ElementHost Element to your Winforms. In your main class add this code in the constructor:<br>
+<br>
+rs = new BetterControl.RangeSlider();<br>
+rs.InitializeComponent();</p>
+<p>rs.LowerValue = 30;<br>
+rs.UpperValue = 90;<br>
+rs.Minimum = 0;<br>
+rs.Maximum = 100;<br>
+this.elementHost1.Child = rs;<br>
+rs.OnLowerSlider_ValueChanged &#43;= new BetterControl.RangeSlider.MyControlEventHandler(rs_OnLowerSlider_ValueChanged);<br>
+rs.OnUpperSlider_ValueChanged &#43;= new BetterControl.RangeSlider.MyControlEventHandler(rs_OnUpperSlider_ValueChanged);</p>
+<p>and add the function for the value changed:<br>
+<br>
+void rs_OnLowerSlider_ValueChanged(object sender, double result)</p>
+<p>{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;MessageBox.Show(&quot;L&quot;&#43;result.ToString());<br>
+}</p>
+<p>void rs_OnUpperSlider_ValueChanged(object sender, double result)<br>
+{<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;MessageBox.Show(&quot;U&quot; &#43; result.ToString());<br>
+}</p>
+<p>&nbsp;</p>
+</div><div class="ClearBoth"></div>
