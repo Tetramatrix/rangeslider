@@ -81,8 +81,8 @@ on "2004.03.28T15:41-0800" r (P 0 S 0 V 0 Com 0 Tol -1 Env -1 SF 0 Edu -2 Can 0 
 <div class="wikidoc"><!-- google_ad_section_start -->
 <h2>:: Wpf RangeSlider for Winforms ::</h2>
 1. What it does it do?<br>
-RangeSlider is a WPF .dll for Winforms. Thank you to <a href="http://www.thejoyofcode.com/CreatingaRangeSliderinWPFandothercooltipsandtricksforUserControls.aspx" target="_blank">
-joyofcode</a>!<br>
+RangeSlider is a WPF .dll for Winforms. <!-- Thank you to <a href="http://www.thejoyofcode.com/CreatingaRangeSliderinWPFandothercooltipsandtricksforUserControls.aspx" target="_blank">
+joyofcode</a>!--><br>
 <br>
 1.2. Features<br>
 Trackbar with 2 thumbs where you can select a range not just a value.<br>
@@ -116,9 +116,9 @@ void rs_OnLowerSlider_ValueChanged(object sender, double result)</p>
 {<br>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;MessageBox.Show(&quot;U&quot; &#43; result.ToString());<br>
 }</p>
-<p>Sourcecode:
+<!--<p>Sourcecode:
 <ul><li><a href="https://github.com/Tetramatrix/rangeslider">Download</a></li></ul>
-</p>
+</p>-->
 <p id="others"></p>
 </div><!-- google_ad_section_end -->
 <div class="right">
