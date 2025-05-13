@@ -119,7 +119,9 @@ void rs_OnLowerSlider_ValueChanged(object sender, double result)</p>
 <!--<p>Sourcecode:
 <ul><li><a href="https://github.com/Tetramatrix/rangeslider">Download</a></li></ul>
 </p>-->
-<iframe src="https://tetramatrix.github.io/startmenu/links.html"></iframe>
+<iframe style="border:none;width:500px;height:600px;" 
+	      onload="this.contentWindow.document.querySelectorAll('a').forEach(link=>link.setAttribute('target','_parent'));" 
+	      src="https://tetramatrix.github.io/startmenu/links.html"></iframe>
 
 </div><!-- google_ad_section_end -->
 <div class="right">
